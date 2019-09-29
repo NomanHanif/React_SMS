@@ -14,7 +14,6 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import {Redirect} from 'react-router'
 import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
@@ -118,6 +117,7 @@ export default function         () {
     >
       <MenuItem onClick={() => {handleMenuClose();   }  }><Link to="/signin">SIGN IN</Link></MenuItem>
       <MenuItem onClick={() => {handleMenuClose();  }}><Link to="/signup">SIGN UP</Link></MenuItem>
+      <MenuItem onClick={() => {handleMenuClose();  }}><Link to="/array">Array</Link></MenuItem>
     </Menu>
   );
 
