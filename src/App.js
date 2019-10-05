@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link,Redirect } from
+import { BrowserRouter, Route, Redirect } from
   "react-router-dom";
 // import SignIn from './components/signin';
 // import SignUp from './components/signup';
@@ -9,6 +9,7 @@ import NavBar from './components/navbar'
 import Home from './components/home'
 import About from './components/about'
 import Contact from './components/contact'
+import Navigation from './components/navigation'
 
 function App() {
 
@@ -33,11 +34,7 @@ function App() {
           <MDBRow>
             <MDBCol size="12"></MDBCol>
             <MDBCol size="12">
-              <div>
-                <Link to="/home" >Home</Link>
-                <Link to="/contact" >Contact</Link>
-                <Link to="/about" >About</Link>
-              </div>
+            <Navigation />
               {/* <Route path="/signin" component={SignIn} />
               <Route path="/signup" component={SignUp} /> */}
               <Route exact path="/" component={Home}></Route>
