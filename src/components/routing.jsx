@@ -5,12 +5,11 @@ import { BrowserRouter, Route, Link,Redirect } from
 // import SignUp from './components/signup';
 import { MDBRow, MDBContainer, MDBCol } from 'mdbreact'
 // import {  makeStyles } from '@material-ui/core/styles';
-import NavBar from './components/navbar'
-import Home from './components/home'
-import About from './components/about'
-import Contact from './components/contact'
+import Home from './home'
+import About from './about'
+import Contact from './contact'
 
-function App() {
+function Routing() {
 
   // const useStyles = () => makeStyles(theme => {
 
@@ -24,12 +23,10 @@ function App() {
 
   return (
     <div >
-       
       <BrowserRouter>
-      <NavBar/>
         {/* <SignUp/> */}
         <MDBContainer style={{ marginTop: '70px' }}>
-         
+
           <MDBRow>
             <MDBCol size="12"></MDBCol>
             <MDBCol size="12">
@@ -57,4 +54,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routing;

@@ -117,6 +117,7 @@ export default function         () {
     >
       <MenuItem onClick={() => {handleMenuClose();   }  }><Link to="/signin">SIGN IN</Link></MenuItem>
       <MenuItem onClick={() => {handleMenuClose();  }}><Link to="/signup">SIGN UP</Link></MenuItem>
+      <MenuItem onClick={() => {handleMenuClose();  }}><Link to="/routing">Routing Practice</Link></MenuItem>
     </Menu>
   );
 
