@@ -9,7 +9,7 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 
-function Routing() {
+function RoutingPractice() {
 
   // const useStyles = () => makeStyles(theme => {
 
@@ -54,4 +54,4 @@ function Routing() {
   );
 }
 
-export default Routing;
+export default RoutingPractice;
