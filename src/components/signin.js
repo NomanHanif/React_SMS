@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
   MDBContainer,
   MDBRow,
@@ -16,6 +16,11 @@ import {Link} from 'react-router-dom';
 
 
 const SignIn = () => {
+
+  let [email,setEmail] = useState("");
+  let [password,setPassword] = useState("");
+
+
   return (
     <MDBContainer>
       <MDBRow>
@@ -37,6 +42,8 @@ const SignIn = () => {
                     validate
                     error="wrong"
                     success="right"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <MDBInput
                     label="Type your password"
@@ -44,6 +51,8 @@ const SignIn = () => {
                     group
                     type="password"
                     validate
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
 
@@ -51,7 +60,8 @@ const SignIn = () => {
                 <MDBBtn
                   color="light-blue"
                   className="mb-3"
-                  type="submit"
+                  type="button"
+                  onClick={ () => { alert( email) }}
                 >
                   Login
                 </MDBBtn>
