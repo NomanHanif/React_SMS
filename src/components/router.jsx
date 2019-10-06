@@ -10,6 +10,7 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 import Navigation from './navigation'
+import ToDo from './todo'
 
 function Router() {
 
@@ -41,6 +42,7 @@ function Router() {
               <Route path="/home" component={Home}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/contact" component={Contact}></Route>
+              <Route path="/todo" component={ToDo}></Route>
 
               {<Redirect  to="/" />}
             </MDBCol>
