@@ -19,11 +19,10 @@ const About = (props) => {
         <MDBCol md="12">
           <h1>About</h1>
         <MDBBtn onClick={ o => {
-          setTimeout(function() {
-            props.history.push("/");
-          }, 5000);
-          }}>Go to Home </MDBBtn>
-        <MDBBtn onClick={ o => {props.history.push("/contact")}}>Go to Contact </MDBBtn>
+         
+            props.history.push("/detail/1");
+          }}>Go 1 </MDBBtn>
+        <MDBBtn onClick={ o => {props.history.push("/detail/2")}}>Go 2 </MDBBtn>
         </MDBCol>
       </MDBRow>
     </MDBContainer>

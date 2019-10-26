@@ -10,6 +10,8 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 import Navigation from './navigation'
+import Details from './detial'
+import NotFound from './notfound'
 
 function Router() {
 
@@ -41,8 +43,10 @@ function Router() {
               <Route path="/home" component={Home}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/contact" component={Contact}></Route>
+              <Route path="/detail/:id/:name?" component={Details}></Route>
+              <Route path="/notfound" component={NotFound}></Route>
 
-              {<Redirect  to="/" />}
+              {<Redirect  to="/notfound" />}
             </MDBCol>
             <MDBCol size="4"></MDBCol>
 
