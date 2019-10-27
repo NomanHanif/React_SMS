@@ -1,8 +1,8 @@
 import { createStore } from 'redux';
 
-import { TodoReducer } from './Reducers';
+import { CounterReducer } from './Reducers/counterReducer';
 
-let store = createStore(TodoReducer);
+let store = createStore(CounterReducer);
 
 
 store.subscribe(() => {
